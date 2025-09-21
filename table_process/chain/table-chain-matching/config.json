@@ -1,0 +1,14 @@
+{
+    "tables_dir": "/content/tables",
+    "reference_json": "tables_summary.json",
+    "mask_dir": "/content/mask",
+    "output_dir": "output",
+    "similarity_threshold": 0.78,
+    "confident_threshold": 0.97,
+    "split_threshold": 0.80,
+    "merge_threshold": 0.80,
+    "max_gap_years": 3,
+    "use_api_validation": false,
+    "CLAUDE_API_KEY": "",
+    "model_name": "imvladikon/sentence-transformers-alephbert"
+}

@@ -1,0 +1,15 @@
+# Configuration for table extraction
+
+# Paths (relative to table_process root)
+reports_dir: "extract_tables/temp/reports"
+tables_dir: "chain/table-chain-matching/tables"
+
+# Extraction settings
+encoding: "utf-8-sig"
+table_marker: "לוח"
+exclude_marker: "תרשים"
+
+# Year ranges
+years_2001_2016: [2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016]
+years_2019_2024: [2019, 2021, 2022, 2023, 2024]
+years_special: [2017, 2018, 2020]

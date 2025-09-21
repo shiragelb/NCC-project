@@ -1,0 +1,1637 @@
+{
+  "metadata": {
+    "timestamp": "20250916_011145",
+    "chapters_processed": [
+      10
+    ],
+    "api_model": "claude-sonnet-4-20250514",
+    "total_api_calls": 407,
+    "similarity_threshold": 0.75,
+    "pairs_pre_screened_out": 3701
+  },
+  "summary": {
+    "original_chains": 79,
+    "final_chains": 69,
+    "chains_reduced": 10,
+    "reduction_percentage": 12.658227848101266,
+    "successful_merges": 7,
+    "unique_years_before": 23,
+    "unique_years_after": 23,
+    "year_coverage_maintained": true
+  },
+  "successful_merges": [
+    {
+      "merged_chain_id": "merged_chain_1_10_2001_chain_3_10_2002",
+      "source_chains": [
+        "chain_1_10_2001",
+        "chain_3_10_2002"
+      ],
+      "years": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 23,
+      "year_range": "2001-2024"
+    },
+    {
+      "merged_chain_id": "merged_chain_5_10_2001_chain_7_10_2006",
+      "source_chains": [
+        "chain_5_10_2001",
+        "chain_7_10_2006"
+      ],
+      "years": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 20,
+      "year_range": "2001-2024"
+    },
+    {
+      "merged_chain_id": "merged_chain_6_10_2001_chain_9_10_2006",
+      "source_chains": [
+        "chain_6_10_2001",
+        "chain_9_10_2006"
+      ],
+      "years": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 17,
+      "year_range": "2001-2024"
+    },
+    {
+      "merged_chain_id": "merged_chain_13_10_2005_chain_15_10_2006",
+      "source_chains": [
+        "chain_13_10_2005",
+        "chain_15_10_2006"
+      ],
+      "years": [
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 16,
+      "year_range": "2005-2024"
+    },
+    {
+      "merged_chain_id": "merged_chain_17_10_2009_chain_17_10_2019",
+      "source_chains": [
+        "chain_17_10_2009",
+        "chain_17_10_2019"
+      ],
+      "years": [
+        2009,
+        2010,
+        2011,
+        2012,
+        2015,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 10,
+      "year_range": "2009-2024"
+    },
+    {
+      "merged_chain_id": "merged_merged_chain_5_10_2009_chain_13_10_2024_merged_chain_4_10_2001_chain_5_10_2002",
+      "source_chains": [
+        "merged_chain_5_10_2009_chain_13_10_2024",
+        "merged_chain_4_10_2001_chain_5_10_2002"
+      ],
+      "years": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 17,
+      "year_range": "2001-2024"
+    },
+    {
+      "merged_chain_id": "merged_chain_1_10_2006_merged_chain_2_10_2015_chain_1_10_2017",
+      "source_chains": [
+        "chain_1_10_2006",
+        "merged_chain_2_10_2015_chain_1_10_2017"
+      ],
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2017,
+        2018,
+        2024
+      ],
+      "year_count": 13,
+      "year_range": "2006-2024"
+    }
+  ],
+  "iteration_details": [
+    {
+      "iteration": 1,
+      "candidates_available": 2189,
+      "candidates_checked": 1649,
+      "pre_screened_out": 1283,
+      "chains_at_start": 87,
+      "merges_performed": 8,
+      "chains_remaining": 71,
+      "api_calls_in_iteration": 366,
+      "merges": [
+        {
+          "iteration": 1,
+          "candidate_position": 1,
+          "chain1": "chain_1_10_2001",
+          "chain2": "chain_3_10_2002",
+          "improvement": 10,
+          "completeness": 0.9583333333333334,
+          "year_range": "2001-2024",
+          "total_years": 23,
+          "reason": "Both headers measure the same core variable (child poverty rates), use the same categorization (by s (cosine=0.979)"
+        },
+        {
+          "iteration": 1,
+          "candidate_position": 25,
+          "chain1": "chain_5_10_2001",
+          "chain2": "chain_7_10_2006",
+          "improvement": 10,
+          "completeness": 0.8333333333333334,
+          "year_range": "2001-2024",
+          "total_years": 20,
+          "reason": "Both headers describe the same dataset about work and studies of youth aged 15-17 by population grou (cosine=0.956)"
+        },
+        {
+          "iteration": 1,
+          "candidate_position": 106,
+          "chain1": "chain_6_10_2001",
+          "chain2": "chain_9_10_2006",
+          "improvement": 7,
+          "completeness": 0.7083333333333334,
+          "year_range": "2001-2024",
+          "total_years": 17,
+          "reason": "Both headers describe civilian labor force characteristics of ages 15-17 by gender using the same me (cosine=0.959)"
+        },
+        {
+          "iteration": 1,
+          "candidate_position": 140,
+          "chain1": "chain_13_10_2005",
+          "chain2": "chain_15_10_2006",
+          "improvement": 6,
+          "completeness": 0.8,
+          "year_range": "2005-2024",
+          "total_years": 16,
+          "reason": "Semantic check (cosine=0.967)"
+        },
+        {
+          "iteration": 1,
+          "candidate_position": 245,
+          "chain1": "chain_17_10_2009",
+          "chain2": "chain_17_10_2019",
+          "improvement": 5,
+          "completeness": 0.625,
+          "year_range": "2009-2024",
+          "total_years": 10,
+          "reason": "Both headers describe the same dataset - average monthly household expenditure for families with chi (cosine=0.848)"
+        },
+        {
+          "iteration": 1,
+          "candidate_position": 1102,
+          "chain1": "chain_5_10_2009",
+          "chain2": "chain_13_10_2024",
+          "improvement": 1,
+          "completeness": 0.5,
+          "year_range": "2009-2024",
+          "total_years": 8,
+          "reason": "Semantic check (cosine=0.905)"
+        },
+        {
+          "iteration": 1,
+          "candidate_position": 1335,
+          "chain1": "chain_4_10_2001",
+          "chain2": "chain_5_10_2002",
+          "improvement": 1,
+          "completeness": 0.4166666666666667,
+          "year_range": "2001-2024",
+          "total_years": 10,
+          "reason": "Both headers describe the same dataset about children in families receiving income support, categori (cosine=0.984)"
+        },
+        {
+          "iteration": 1,
+          "candidate_position": 1389,
+          "chain1": "chain_2_10_2015",
+          "chain2": "chain_1_10_2017",
+          "improvement": 1,
+          "completeness": 0.4,
+          "year_range": "2015-2024",
+          "total_years": 4,
+          "reason": "Both headers describe the same dataset about children categorized by socio-economic ranking of their (cosine=0.767)"
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "candidates_available": 1665,
+      "candidates_checked": 1540,
+      "pre_screened_out": 1204,
+      "chains_at_start": 73,
+      "merges_performed": 2,
+      "chains_remaining": 69,
+      "api_calls_in_iteration": 336,
+      "merges": [
+        {
+          "iteration": 2,
+          "candidate_position": 52,
+          "chain1": "merged_chain_5_10_2009_chain_13_10_2024",
+          "chain2": "merged_chain_4_10_2001_chain_5_10_2002",
+          "improvement": 7,
+          "completeness": 0.7083333333333334,
+          "year_range": "2001-2024",
+          "total_years": 17,
+          "reason": "Semantic check (cosine=0.881)"
+        },
+        {
+          "iteration": 2,
+          "candidate_position": 245,
+          "chain1": "chain_1_10_2006",
+          "chain2": "merged_chain_2_10_2015_chain_1_10_2017",
+          "improvement": 3,
+          "completeness": 0.6842105263157895,
+          "year_range": "2006-2024",
+          "total_years": 13,
+          "reason": "Both headers measure the same core variable (percentage of children), use the same categorization (b (cosine=0.897)"
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "candidates_available": 1552,
+      "candidates_checked": 1552,
+      "pre_screened_out": 1214,
+      "chains_at_start": 69,
+      "merges_performed": 0,
+      "chains_remaining": 69,
+      "api_calls_in_iteration": 338,
+      "merges": []
+    }
+  ],
+  "final_chains_summary": {
+    "chain_2_10_2001": {
+      "years": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 13,
+      "year_range": "2001-2024",
+      "gaps": [
+        2006
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_2_10_2001"
+      ]
+    },
+    "chain_3_10_2001": {
+      "years": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2005
+      ],
+      "year_count": 5,
+      "year_range": "2001-2005",
+      "gaps": [
+        2006
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_3_10_2001"
+      ]
+    },
+    "chain_7_10_2001": {
+      "years": [
+        2001,
+        2002
+      ],
+      "year_count": 2,
+      "year_range": "2001-2002",
+      "gaps": [
+        2003
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_7_10_2001"
+      ]
+    },
+    "chain_1_10_2002": {
+      "years": [
+        2002,
+        2003,
+        2004,
+        2005,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 10,
+      "year_range": "2002-2024",
+      "gaps": [
+        2006
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_1_10_2002"
+      ]
+    },
+    "chain_6_10_2002": {
+      "years": [
+        2002,
+        2003,
+        2018,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 8,
+      "year_range": "2002-2024",
+      "gaps": [
+        2004,
+        2020
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_6_10_2002"
+      ]
+    },
+    "chain_7_10_2002": {
+      "years": [
+        2002
+      ],
+      "year_count": 1,
+      "year_range": "2002-2002",
+      "gaps": [
+        2003
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_7_10_2002"
+      ]
+    },
+    "chain_8_10_2002": {
+      "years": [
+        2002,
+        2003
+      ],
+      "year_count": 2,
+      "year_range": "2002-2003",
+      "gaps": [
+        2004
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_8_10_2002"
+      ]
+    },
+    "chain_10_10_2002": {
+      "years": [
+        2002,
+        2003,
+        2004,
+        2005
+      ],
+      "year_count": 4,
+      "year_range": "2002-2005",
+      "gaps": [
+        2006
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_10_10_2002"
+      ]
+    },
+    "chain_14_10_2002": {
+      "years": [
+        2002,
+        2003,
+        2004,
+        2005,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 9,
+      "year_range": "2002-2024",
+      "gaps": [
+        2006,
+        2020
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_14_10_2002"
+      ]
+    },
+    "chain_2_10_2002": {
+      "years": [
+        2002,
+        2011,
+        2012
+      ],
+      "year_count": 3,
+      "year_range": "2002-2012",
+      "gaps": [
+        2003,
+        2013
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_2_10_2002"
+      ]
+    },
+    "chain_6_10_2003": {
+      "years": [
+        2003,
+        2004,
+        2005,
+        2024
+      ],
+      "year_count": 4,
+      "year_range": "2003-2024",
+      "gaps": [
+        2006
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_6_10_2003"
+      ]
+    },
+    "chain_4_10_2003": {
+      "years": [
+        2003,
+        2004,
+        2011,
+        2012,
+        2013
+      ],
+      "year_count": 5,
+      "year_range": "2003-2013",
+      "gaps": [
+        2005,
+        2014
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_4_10_2003"
+      ]
+    },
+    "chain_12_10_2004": {
+      "years": [
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "year_count": 12,
+      "year_range": "2004-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_12_10_2004"
+      ]
+    },
+    "chain_15_10_2004": {
+      "years": [
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "year_count": 12,
+      "year_range": "2004-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_15_10_2004"
+      ]
+    },
+    "chain_13_10_2004": {
+      "years": [
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "year_count": 12,
+      "year_range": "2004-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_13_10_2004"
+      ]
+    },
+    "chain_11_10_2004": {
+      "years": [
+        2004
+      ],
+      "year_count": 1,
+      "year_range": "2004-2004",
+      "gaps": [
+        2005
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_11_10_2004"
+      ]
+    },
+    "chain_11_10_2006": {
+      "years": [
+        2006
+      ],
+      "year_count": 1,
+      "year_range": "2006-2006",
+      "gaps": [
+        2007
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_11_10_2006"
+      ]
+    },
+    "chain_6_10_2006": {
+      "years": [
+        2006
+      ],
+      "year_count": 1,
+      "year_range": "2006-2006",
+      "gaps": [
+        2007
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_6_10_2006"
+      ]
+    },
+    "chain_3_10_2006": {
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "year_count": 10,
+      "year_range": "2006-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_3_10_2006"
+      ]
+    },
+    "chain_12_10_2006": {
+      "years": [
+        2006
+      ],
+      "year_count": 1,
+      "year_range": "2006-2006",
+      "gaps": [
+        2007
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_12_10_2006"
+      ]
+    },
+    "chain_10_10_2006": {
+      "years": [
+        2006
+      ],
+      "year_count": 1,
+      "year_range": "2006-2006",
+      "gaps": [
+        2007
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_10_10_2006"
+      ]
+    },
+    "chain_8_10_2006": {
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "year_count": 10,
+      "year_range": "2006-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_8_10_2006"
+      ]
+    },
+    "chain_5_10_2006": {
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009
+      ],
+      "year_count": 4,
+      "year_range": "2006-2009",
+      "gaps": [
+        2010
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_5_10_2006"
+      ]
+    },
+    "chain_4_10_2006": {
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "year_count": 10,
+      "year_range": "2006-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_4_10_2006"
+      ]
+    },
+    "chain_7_10_2007": {
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2014,
+        2015
+      ],
+      "year_count": 8,
+      "year_range": "2007-2015",
+      "gaps": [
+        2013,
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_7_10_2007"
+      ]
+    },
+    "chain_10_10_2007": {
+      "years": [
+        2007
+      ],
+      "year_count": 1,
+      "year_range": "2007-2007",
+      "gaps": [
+        2008
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_10_10_2007"
+      ]
+    },
+    "chain_8_10_2007": {
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012
+      ],
+      "year_count": 6,
+      "year_range": "2007-2012",
+      "gaps": [
+        2013
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_8_10_2007"
+      ]
+    },
+    "chain_9_10_2007": {
+      "years": [
+        2007
+      ],
+      "year_count": 1,
+      "year_range": "2007-2007",
+      "gaps": [
+        2008
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_9_10_2007"
+      ]
+    },
+    "chain_6_10_2007": {
+      "years": [
+        2007
+      ],
+      "year_count": 1,
+      "year_range": "2007-2007",
+      "gaps": [
+        2008
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_6_10_2007"
+      ]
+    },
+    "chain_17_10_2007": {
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "year_count": 9,
+      "year_range": "2007-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_17_10_2007"
+      ]
+    },
+    "chain_14_10_2009": {
+      "years": [
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015
+      ],
+      "year_count": 7,
+      "year_range": "2009-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_14_10_2009"
+      ]
+    },
+    "chain_8_10_2010": {
+      "years": [
+        2010
+      ],
+      "year_count": 1,
+      "year_range": "2010-2010",
+      "gaps": [
+        2011
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_8_10_2010"
+      ]
+    },
+    "chain_7_10_2011": {
+      "years": [
+        2011
+      ],
+      "year_count": 1,
+      "year_range": "2011-2011",
+      "gaps": [
+        2012
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_7_10_2011"
+      ]
+    },
+    "chain_5_10_2011": {
+      "years": [
+        2011
+      ],
+      "year_count": 1,
+      "year_range": "2011-2011",
+      "gaps": [
+        2012
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_5_10_2011"
+      ]
+    },
+    "chain_5_10_2013": {
+      "years": [
+        2013,
+        2014
+      ],
+      "year_count": 2,
+      "year_range": "2013-2014",
+      "gaps": [
+        2015
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_5_10_2013"
+      ]
+    },
+    "chain_3_10_2015": {
+      "years": [
+        2015
+      ],
+      "year_count": 1,
+      "year_range": "2015-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_3_10_2015"
+      ]
+    },
+    "chain_4_10_2015": {
+      "years": [
+        2015
+      ],
+      "year_count": 1,
+      "year_range": "2015-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_4_10_2015"
+      ]
+    },
+    "chain_5_10_2015": {
+      "years": [
+        2015
+      ],
+      "year_count": 1,
+      "year_range": "2015-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_5_10_2015"
+      ]
+    },
+    "chain_6_10_2015": {
+      "years": [
+        2015
+      ],
+      "year_count": 1,
+      "year_range": "2015-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_6_10_2015"
+      ]
+    },
+    "chain_7_10_2015": {
+      "years": [
+        2015
+      ],
+      "year_count": 1,
+      "year_range": "2015-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_7_10_2015"
+      ]
+    },
+    "chain_8_10_2015": {
+      "years": [
+        2015
+      ],
+      "year_count": 1,
+      "year_range": "2015-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_8_10_2015"
+      ]
+    },
+    "chain_9_10_2015": {
+      "years": [
+        2015
+      ],
+      "year_count": 1,
+      "year_range": "2015-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_9_10_2015"
+      ]
+    },
+    "chain_16_10_2015": {
+      "years": [
+        2015
+      ],
+      "year_count": 1,
+      "year_range": "2015-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_16_10_2015"
+      ]
+    },
+    "chain_18_10_2015": {
+      "years": [
+        2015
+      ],
+      "year_count": 1,
+      "year_range": "2015-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_18_10_2015"
+      ]
+    },
+    "chain_17_10_2015": {
+      "years": [
+        2015
+      ],
+      "year_count": 1,
+      "year_range": "2015-2015",
+      "gaps": [
+        2017
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_17_10_2015"
+      ]
+    },
+    "chain_4_10_2017": {
+      "years": [
+        2017,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 6,
+      "year_range": "2017-2024",
+      "gaps": [
+        2018,
+        2020
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_4_10_2017"
+      ]
+    },
+    "chain_3_10_2018": {
+      "years": [
+        2018,
+        2019,
+        2021
+      ],
+      "year_count": 3,
+      "year_range": "2018-2021",
+      "gaps": [
+        2020,
+        2022
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_3_10_2018"
+      ]
+    },
+    "chain_4_10_2018": {
+      "years": [
+        2018,
+        2019,
+        2021,
+        2022,
+        2023
+      ],
+      "year_count": 5,
+      "year_range": "2018-2023",
+      "gaps": [
+        2020,
+        2024
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_4_10_2018"
+      ]
+    },
+    "chain_11_10_2019": {
+      "years": [
+        2019
+      ],
+      "year_count": 1,
+      "year_range": "2019-2019",
+      "gaps": [
+        2020
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_11_10_2019"
+      ]
+    },
+    "chain_13_10_2019": {
+      "years": [
+        2019,
+        2021,
+        2022,
+        2023
+      ],
+      "year_count": 4,
+      "year_range": "2019-2023",
+      "gaps": [
+        2020,
+        2024
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_13_10_2019"
+      ]
+    },
+    "chain_14_10_2019": {
+      "years": [
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 5,
+      "year_range": "2019-2024",
+      "gaps": [
+        2020
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_14_10_2019"
+      ]
+    },
+    "chain_15_10_2019": {
+      "years": [
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 5,
+      "year_range": "2019-2024",
+      "gaps": [
+        2020
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_15_10_2019"
+      ]
+    },
+    "chain_18_10_2019": {
+      "years": [
+        2019,
+        2021
+      ],
+      "year_count": 2,
+      "year_range": "2019-2021",
+      "gaps": [
+        2020,
+        2022
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_18_10_2019"
+      ]
+    },
+    "chain_19_10_2019": {
+      "years": [
+        2019
+      ],
+      "year_count": 1,
+      "year_range": "2019-2019",
+      "gaps": [
+        2020
+      ],
+      "is_merged": false,
+      "source_chains": [
+        "chain_19_10_2019"
+      ]
+    },
+    "chain_3_10_2024": {
+      "years": [
+        2024
+      ],
+      "year_count": 1,
+      "year_range": "2024-2024",
+      "gaps": [],
+      "is_merged": false,
+      "source_chains": [
+        "chain_3_10_2024"
+      ]
+    },
+    "chain_4_10_2024": {
+      "years": [
+        2024
+      ],
+      "year_count": 1,
+      "year_range": "2024-2024",
+      "gaps": [],
+      "is_merged": false,
+      "source_chains": [
+        "chain_4_10_2024"
+      ]
+    },
+    "chain_11_10_2024": {
+      "years": [
+        2024
+      ],
+      "year_count": 1,
+      "year_range": "2024-2024",
+      "gaps": [],
+      "is_merged": false,
+      "source_chains": [
+        "chain_11_10_2024"
+      ]
+    },
+    "chain_12_10_2024": {
+      "years": [
+        2024
+      ],
+      "year_count": 1,
+      "year_range": "2024-2024",
+      "gaps": [],
+      "is_merged": false,
+      "source_chains": [
+        "chain_12_10_2024"
+      ]
+    },
+    "chain_17_10_2024": {
+      "years": [
+        2024
+      ],
+      "year_count": 1,
+      "year_range": "2024-2024",
+      "gaps": [],
+      "is_merged": false,
+      "source_chains": [
+        "chain_17_10_2024"
+      ]
+    },
+    "chain_20_10_2024": {
+      "years": [
+        2024
+      ],
+      "year_count": 1,
+      "year_range": "2024-2024",
+      "gaps": [],
+      "is_merged": false,
+      "source_chains": [
+        "chain_20_10_2024"
+      ]
+    },
+    "chain_9_10_2024": {
+      "years": [
+        2024
+      ],
+      "year_count": 1,
+      "year_range": "2024-2024",
+      "gaps": [],
+      "is_merged": false,
+      "source_chains": [
+        "chain_9_10_2024"
+      ]
+    },
+    "chain_5_10_2024": {
+      "years": [
+        2024
+      ],
+      "year_count": 1,
+      "year_range": "2024-2024",
+      "gaps": [],
+      "is_merged": false,
+      "source_chains": [
+        "chain_5_10_2024"
+      ]
+    },
+    "merged_chain_1_10_2001_chain_3_10_2002": {
+      "years": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 23,
+      "year_range": "2001-2024",
+      "gaps": [
+        2016
+      ],
+      "is_merged": true,
+      "source_chains": [
+        "chain_1_10_2001",
+        "chain_3_10_2002"
+      ]
+    },
+    "merged_chain_5_10_2001_chain_7_10_2006": {
+      "years": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 20,
+      "year_range": "2001-2024",
+      "gaps": [
+        2016,
+        2017,
+        2018,
+        2020
+      ],
+      "is_merged": true,
+      "source_chains": [
+        "chain_5_10_2001",
+        "chain_7_10_2006"
+      ]
+    },
+    "merged_chain_6_10_2001_chain_9_10_2006": {
+      "years": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 17,
+      "year_range": "2001-2024",
+      "gaps": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2020
+      ],
+      "is_merged": true,
+      "source_chains": [
+        "chain_6_10_2001",
+        "chain_9_10_2006"
+      ]
+    },
+    "merged_chain_13_10_2005_chain_15_10_2006": {
+      "years": [
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 16,
+      "year_range": "2005-2024",
+      "gaps": [
+        2016,
+        2017,
+        2018,
+        2020
+      ],
+      "is_merged": true,
+      "source_chains": [
+        "chain_13_10_2005",
+        "chain_15_10_2006"
+      ]
+    },
+    "merged_chain_17_10_2009_chain_17_10_2019": {
+      "years": [
+        2009,
+        2010,
+        2011,
+        2012,
+        2015,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 10,
+      "year_range": "2009-2024",
+      "gaps": [
+        2013,
+        2014,
+        2016,
+        2017,
+        2018,
+        2020
+      ],
+      "is_merged": true,
+      "source_chains": [
+        "chain_17_10_2009",
+        "chain_17_10_2019"
+      ]
+    },
+    "merged_merged_chain_5_10_2009_chain_13_10_2024_merged_chain_4_10_2001_chain_5_10_2002": {
+      "years": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "year_count": 17,
+      "year_range": "2001-2024",
+      "gaps": [
+        2006,
+        2007,
+        2008,
+        2016,
+        2017,
+        2018,
+        2020
+      ],
+      "is_merged": true,
+      "source_chains": [
+        "merged_chain_5_10_2009_chain_13_10_2024",
+        "merged_chain_4_10_2001_chain_5_10_2002"
+      ]
+    },
+    "merged_chain_1_10_2006_merged_chain_2_10_2015_chain_1_10_2017": {
+      "years": [
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2017,
+        2018,
+        2024
+      ],
+      "year_count": 13,
+      "year_range": "2006-2024",
+      "gaps": [
+        2016,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "is_merged": true,
+      "source_chains": [
+        "chain_1_10_2006",
+        "merged_chain_2_10_2015_chain_1_10_2017"
+      ]
+    }
+  }
+}

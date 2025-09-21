@@ -1,0 +1,16 @@
+# Temporary files
+temp/
+*.pyc
+__pycache__/
+.DS_Store
+
+# Downloaded reports
+reports/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+venv/

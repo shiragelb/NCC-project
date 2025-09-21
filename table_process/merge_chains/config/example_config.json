@@ -1,0 +1,19 @@
+{
+  "matching": {
+    "auto_accept_threshold": 0.85,
+    "manual_review_threshold": 0.5,
+    "edit_distance_threshold": 3,
+    "use_semantic_matching": true,
+    "semantic_similarity_alpha": 0.7
+  },
+  "processing": {
+    "handle_unit_changes": true,
+    "auto_invoke_reasoning": false
+  },
+  "output": {
+    "format": "csv",
+    "encoding": "utf-8-sig",
+    "include_metadata": true,
+    "include_validation_report": true
+  }
+}
