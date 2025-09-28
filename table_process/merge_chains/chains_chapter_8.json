@@ -53,7 +53,6 @@
       "../mask/2010/08/2_08_2010.csv",
       "../mask/2011/08/2_08_2011.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2012
     ],
@@ -132,7 +131,6 @@
       "../mask/2023/8/2_8_2023.csv",
       "../mask/2024/8/2_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [
       2003,
       2005,
@@ -235,7 +233,6 @@
       "../mask/2015/08/4_08_2015.csv",
       "../mask/2016/08/4_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2017
     ],
@@ -292,7 +289,6 @@
       "../mask/2001/08/8_08_2001.csv",
       "../mask/2002/08/8_08_2002.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2003
     ],
@@ -321,7 +317,6 @@
       "../mask/2001/08/10_08_2001.csv",
       "../mask/2002/08/19_08_2002.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2003
     ],
@@ -406,7 +401,6 @@
       "../mask/2015/08/21_08_2015.csv",
       "../mask/2016/08/27_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2017
     ],
@@ -487,7 +481,6 @@
       "../mask/2023/8/19_8_2023.csv",
       "../mask/2024/8/27_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [
       2003,
       2005,
@@ -546,7 +539,6 @@
       "../mask/2023/8/18_8_2023.csv",
       "../mask/2024/8/26_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [
       2002,
       2020
@@ -600,7 +592,6 @@
       "../mask/2023/8/22_8_2023.csv",
       "../mask/2024/8/30_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [
       2002,
       2020
@@ -634,7 +625,6 @@
     "mask_references": [
       "../mask/2001/08/21_08_2001.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2002
     ],
@@ -731,7 +721,6 @@
       "../mask/2023/8/26_8_2023.csv",
       "../mask/2024/8/35_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [
       2007,
       2017,
@@ -822,7 +811,6 @@
       "../mask/2023/8/17_8_2023.csv",
       "../mask/2024/8/19_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [
       2003,
       2005,
@@ -917,7 +905,6 @@
       "../mask/2015/08/34_08_2015.csv",
       "../mask/2016/08/41_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2004,
       2017
@@ -981,7 +968,6 @@
       "../mask/2004/08/28_08_2004.csv",
       "../mask/2005/08/28_08_2005.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2004,
       2006
@@ -1011,7 +997,6 @@
     "mask_references": [
       "../mask/2003/08/6_08_2003.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2004
     ],
@@ -1036,7 +1021,6 @@
       "../mask/2003/08/5_08_2003.csv",
       "../mask/2004/08/5_08_2004.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2005
     ],
@@ -1109,7 +1093,6 @@
       "../mask/2015/08/16_08_2015.csv",
       "../mask/2016/08/22_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2004,
       2017
@@ -1209,7 +1192,6 @@
       "../mask/2015/08/32_08_2015.csv",
       "../mask/2016/08/39_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2017
     ],
@@ -1258,7 +1240,6 @@
     "mask_references": [
       "../mask/2004/08/13_08_2004.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2005
     ],
@@ -1279,7 +1260,6 @@
     "mask_references": [
       "../mask/2004/08/18_08_2004.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2005
     ],
@@ -1344,7 +1324,6 @@
       "../mask/2015/08/28_08_2015.csv",
       "../mask/2016/08/35_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2013,
       2017
@@ -1390,7 +1369,6 @@
     "mask_references": [
       "../mask/2004/08/6_08_2004.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2005
     ],
@@ -1415,7 +1393,6 @@
       "../mask/2004/08/14_08_2004.csv",
       "../mask/2019/8/13_8_2019.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2005,
       2020
@@ -1441,7 +1418,6 @@
     "mask_references": [
       "../mask/2005/08/11_08_2005.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2006
     ],
@@ -1462,7 +1438,6 @@
     "mask_references": [
       "../mask/2005/08/12_08_2005.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2006
     ],
@@ -1487,7 +1462,6 @@
       "../mask/2005/08/13_08_2005.csv",
       "../mask/2006/08/14_08_2006.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2007
     ],
@@ -1512,7 +1486,6 @@
     "mask_references": [
       "../mask/2006/08/24_08_2006.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2007
     ],
@@ -1569,7 +1542,6 @@
       "../mask/2015/08/9_08_2015.csv",
       "../mask/2016/08/9_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2007,
       2017
@@ -1611,7 +1583,6 @@
     "mask_references": [
       "../mask/2006/08/15_08_2006.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2007
     ],
@@ -1668,7 +1639,6 @@
       "../mask/2015/08/26_08_2015.csv",
       "../mask/2016/08/33_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2017
     ],
@@ -1709,7 +1679,6 @@
     "mask_references": [
       "../mask/2007/08/10_08_2007.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2008
     ],
@@ -1758,7 +1727,6 @@
       "../mask/2015/08/10_08_2015.csv",
       "../mask/2016/08/10_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2009,
       2017
@@ -1828,7 +1796,6 @@
       "../mask/2015/08/11_08_2015.csv",
       "../mask/2016/08/11_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2017
     ],
@@ -1883,7 +1850,6 @@
       "../mask/2011/08/14_08_2011.csv",
       "../mask/2012/08/14_08_2012.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2013
     ],
@@ -1926,7 +1892,6 @@
       "../mask/2010/08/17_08_2010.csv",
       "../mask/2011/08/15_08_2011.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2012
     ],
@@ -1983,7 +1948,6 @@
       "../mask/2015/08/19_08_2015.csv",
       "../mask/2016/08/25_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2011,
       2017
@@ -2021,7 +1985,6 @@
     "mask_references": [
       "../mask/2008/08/27_08_2008.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2009
     ],
@@ -2050,7 +2013,6 @@
       "../mask/2009/08/35_08_2009.csv",
       "../mask/2010/08/35_08_2010.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2009,
       2011
@@ -2078,7 +2040,6 @@
     "mask_references": [
       "../mask/2008/08/26_08_2008.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2009
     ],
@@ -2127,7 +2088,6 @@
       "../mask/2015/08/31_08_2015.csv",
       "../mask/2016/08/38_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2017
     ],
@@ -2172,7 +2132,6 @@
       "../mask/2010/08/23_08_2010.csv",
       "../mask/2016/08/28_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2011,
       2017
@@ -2208,7 +2167,6 @@
       "../mask/2013/08/21_08_2013.csv",
       "../mask/2014/08/18_08_2014.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2015
     ],
@@ -2251,7 +2209,6 @@
       "../mask/2015/08/2_08_2015.csv",
       "../mask/2016/08/2_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2017
     ],
@@ -2290,7 +2247,6 @@
       "../mask/2014/08/8_08_2014.csv",
       "../mask/2016/08/17_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2015,
       2017
@@ -2326,7 +2282,6 @@
       "../mask/2014/08/9_08_2014.csv",
       "../mask/2016/08/12_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2015,
       2017
@@ -2358,7 +2313,6 @@
       "../mask/2013/08/9_08_2013.csv",
       "../mask/2016/08/18_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2014,
       2017
@@ -2384,7 +2338,6 @@
     "mask_references": [
       "../mask/2014/08/24_08_2014.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2015
     ],
@@ -2405,7 +2358,6 @@
     "mask_references": [
       "../mask/2014/08/25_08_2014.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2015
     ],
@@ -2426,7 +2378,6 @@
     "mask_references": [
       "../mask/2015/08/22_08_2015.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2016
     ],
@@ -2447,7 +2398,6 @@
     "mask_references": [
       "../mask/2016/08/13_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2017
     ],
@@ -2468,7 +2418,6 @@
     "mask_references": [
       "../mask/2016/08/16_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2017
     ],
@@ -2489,7 +2438,6 @@
     "mask_references": [
       "../mask/2016/08/19_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2017
     ],
@@ -2510,7 +2458,6 @@
     "mask_references": [
       "../mask/2016/08/31_08_2016.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2017
     ],
@@ -2535,7 +2482,6 @@
       "../mask/2017/08/8_08_2017.csv",
       "../mask/2019/8/14_8_2019.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2018,
       2020
@@ -2569,7 +2515,6 @@
       "../mask/2019/8/8_8_2019.csv",
       "../mask/2021/8/8_8_2021.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2018,
       2020,
@@ -2602,7 +2547,6 @@
       "../mask/2017/08/4_08_2017.csv",
       "../mask/2019/8/5_8_2019.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2018,
       2020
@@ -2648,7 +2592,6 @@
       "../mask/2023/8/8_8_2023.csv",
       "../mask/2024/8/10_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [
       2018,
       2020
@@ -2702,7 +2645,6 @@
       "../mask/2023/8/4_8_2023.csv",
       "../mask/2024/8/5_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [
       1.0,
@@ -2749,7 +2691,6 @@
       "../mask/2023/8/9_8_2023.csv",
       "../mask/2024/8/11_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [
       2020
     ],
@@ -2796,7 +2737,6 @@
       "../mask/2023/8/10_8_2023.csv",
       "../mask/2024/8/12_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [
       2020
     ],
@@ -2843,7 +2783,6 @@
       "../mask/2023/8/20_8_2023.csv",
       "../mask/2024/8/28_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [
       2020
     ],
@@ -2890,7 +2829,6 @@
       "../mask/2023/8/21_8_2023.csv",
       "../mask/2024/8/29_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [
       2020
     ],
@@ -2925,7 +2863,6 @@
       "../mask/2019/8/29_8_2019.csv",
       "../mask/2024/8/32_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [
       2020
     ],
@@ -2962,7 +2899,6 @@
       "../mask/2022/8/30_8_2022.csv",
       "../mask/2023/8/28_8_2023.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2020,
       2024
@@ -3004,7 +2940,6 @@
       "../mask/2022/8/31_8_2022.csv",
       "../mask/2023/8/29_8_2023.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2020,
       2024
@@ -3050,7 +2985,6 @@
       "../mask/2023/8/30_8_2023.csv",
       "../mask/2024/8/45_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [
       2020
     ],
@@ -3093,7 +3027,6 @@
       "../mask/2023/8/24_8_2023.csv",
       "../mask/2024/8/33_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [
       1.0,
@@ -3132,7 +3065,6 @@
       "../mask/2023/8/25_8_2023.csv",
       "../mask/2024/8/34_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [
       1.0,
@@ -3159,7 +3091,6 @@
     "mask_references": [
       "../mask/2022/8/18_8_2022.csv"
     ],
-    "status": "dormant",
     "gaps": [
       2023
     ],
@@ -3180,7 +3111,6 @@
     "mask_references": [
       "../mask/2024/8/3_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [],
     "api_validated": []
@@ -3199,7 +3129,6 @@
     "mask_references": [
       "../mask/2024/8/7_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [],
     "api_validated": []
@@ -3218,7 +3147,6 @@
     "mask_references": [
       "../mask/2024/8/21_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [],
     "api_validated": []
@@ -3237,7 +3165,6 @@
     "mask_references": [
       "../mask/2024/8/22_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [],
     "api_validated": []
@@ -3256,7 +3183,6 @@
     "mask_references": [
       "../mask/2024/8/23_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [],
     "api_validated": []
@@ -3275,7 +3201,6 @@
     "mask_references": [
       "../mask/2024/8/24_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [],
     "api_validated": []
@@ -3294,7 +3219,6 @@
     "mask_references": [
       "../mask/2024/8/25_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [],
     "api_validated": []
@@ -3313,7 +3237,6 @@
     "mask_references": [
       "../mask/2024/8/37_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [],
     "api_validated": []
@@ -3332,7 +3255,6 @@
     "mask_references": [
       "../mask/2024/8/38_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [],
     "api_validated": []
@@ -3351,7 +3273,6 @@
     "mask_references": [
       "../mask/2024/8/39_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [],
     "api_validated": []
@@ -3370,7 +3291,6 @@
     "mask_references": [
       "../mask/2024/8/40_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [],
     "api_validated": []
@@ -3389,7 +3309,6 @@
     "mask_references": [
       "../mask/2024/8/41_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [],
     "api_validated": []
@@ -3408,7 +3327,6 @@
     "mask_references": [
       "../mask/2024/8/42_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [],
     "api_validated": []
@@ -3427,7 +3345,6 @@
     "mask_references": [
       "../mask/2024/8/43_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [],
     "api_validated": []
@@ -3446,7 +3363,6 @@
     "mask_references": [
       "../mask/2024/8/44_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [],
     "api_validated": []
@@ -3465,7 +3381,6 @@
     "mask_references": [
       "../mask/2024/8/6_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [],
     "api_validated": []
@@ -3484,7 +3399,6 @@
     "mask_references": [
       "../mask/2024/8/17_8_2024.csv"
     ],
-    "status": "active",
     "gaps": [],
     "similarities": [],
     "api_validated": []
@@ -3595,7 +3509,6 @@
       "../mask/2023/8/1_8_2023.csv",
       "../mask/2024/8/1_8_2024.csv"
     ],
-    "status": "merged",
     "gaps": [],
     "source_chains": [
       "chain_1_08_2001",
@@ -3699,7 +3612,6 @@
       "../mask/2023/8/11_8_2023.csv",
       "../mask/2024/8/14_8_2024.csv"
     ],
-    "status": "merged",
     "gaps": [
       2017,
       2018,
@@ -3803,7 +3715,6 @@
       "../mask/2023/8/14_8_2023.csv",
       "../mask/2024/8/16_8_2024.csv"
     ],
-    "status": "merged",
     "gaps": [
       2011,
       2017,
@@ -3908,7 +3819,6 @@
       "../mask/2023/8/3_8_2023.csv",
       "../mask/2024/8/4_8_2024.csv"
     ],
-    "status": "merged",
     "gaps": [
       2004,
       2018
@@ -4007,7 +3917,6 @@
       "../mask/2023/8/7_8_2023.csv",
       "../mask/2024/8/9_8_2024.csv"
     ],
-    "status": "merged",
     "gaps": [
       2018,
       2020
@@ -4102,7 +4011,6 @@
       "../mask/2023/8/15_8_2023.csv",
       "../mask/2024/8/18_8_2024.csv"
     ],
-    "status": "merged",
     "gaps": [
       2017,
       2018,
@@ -4202,7 +4110,6 @@
       "../mask/2023/8/16_8_2023.csv",
       "../mask/2024/8/20_8_2024.csv"
     ],
-    "status": "merged",
     "gaps": [
       2004,
       2017,
@@ -4284,7 +4191,6 @@
       "../mask/2023/8/12_8_2023.csv",
       "../mask/2024/8/13_8_2024.csv"
     ],
-    "status": "merged",
     "gaps": [
       2010,
       2011,
@@ -4367,7 +4273,6 @@
       "../mask/2015/08/30_08_2015.csv",
       "../mask/2016/08/37_08_2016.csv"
     ],
-    "status": "merged",
     "gaps": [
       2004
     ],
@@ -4441,7 +4346,6 @@
       "../mask/2023/8/13_8_2023.csv",
       "../mask/2024/8/15_8_2024.csv"
     ],
-    "status": "merged",
     "gaps": [
       2009,
       2010,
@@ -4541,7 +4445,6 @@
       "../mask/2016/08/14_08_2016.csv",
       "../mask/2019/8/12_8_2019.csv"
     ],
-    "status": "merged",
     "gaps": [
       2017,
       2018
@@ -4628,7 +4531,6 @@
       "../mask/2015/08/27_08_2015.csv",
       "../mask/2016/08/34_08_2016.csv"
     ],
-    "status": "merged",
     "gaps": [],
     "source_chains": [
       "chain_17_08_2001",
@@ -4708,7 +4610,6 @@
       "../mask/2015/08/13_08_2015.csv",
       "../mask/2016/08/15_08_2016.csv"
     ],
-    "status": "merged",
     "gaps": [
       2004
     ],
@@ -4770,7 +4671,6 @@
       "../mask/2019/8/22_8_2019.csv",
       "../mask/2022/8/19_8_2022.csv"
     ],
-    "status": "merged",
     "gaps": [
       2017,
       2018,
@@ -4823,7 +4723,6 @@
       "../mask/2023/8/23_8_2023.csv",
       "../mask/2024/8/31_8_2024.csv"
     ],
-    "status": "merged",
     "gaps": [
       2017,
       2018,
@@ -4895,7 +4794,6 @@
       "../mask/2023/8/6_8_2023.csv",
       "../mask/2024/8/8_8_2024.csv"
     ],
-    "status": "merged",
     "gaps": [
       2007,
       2008,
@@ -4989,7 +4887,6 @@
       "../mask/2015/08/5_08_2015.csv",
       "../mask/2016/08/5_08_2016.csv"
     ],
-    "status": "merged",
     "gaps": [],
     "source_chains": [
       "chain_5_08_2001",
@@ -5037,7 +4934,6 @@
       "../mask/2009/08/7_08_2009.csv",
       "../mask/2010/08/7_08_2010.csv"
     ],
-    "status": "merged",
     "gaps": [],
     "source_chains": [
       "chain_12_08_2004",
@@ -5101,7 +4997,6 @@
       "../mask/2015/08/6_08_2015.csv",
       "../mask/2016/08/6_08_2016.csv"
     ],
-    "status": "merged",
     "gaps": [
       2011,
       2012
@@ -5160,7 +5055,6 @@
       "../mask/2015/08/24_08_2015.csv",
       "../mask/2016/08/30_08_2016.csv"
     ],
-    "status": "merged",
     "gaps": [
       2011,
       2012,
@@ -5201,7 +5095,6 @@
       "../mask/2016/08/36_08_2016.csv",
       "../mask/2019/8/30_8_2019.csv"
     ],
-    "status": "merged",
     "gaps": [
       2017,
       2018
@@ -5308,7 +5201,6 @@
       "../mask/2023/8/27_8_2023.csv",
       "../mask/2024/8/36_8_2024.csv"
     ],
-    "status": "merged",
     "gaps": [
       2017,
       2018,
