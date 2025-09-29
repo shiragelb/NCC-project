@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project extracts and processes graphs and tables from Israeli Ministry of Education annual reports spanning 2001-2023. The pipeline converts unstructured data from Word documents into structured CSV files, handling different document formats and using AI-powered redundancy detection to filter relevant graphs.
+This project extracts and processes graphs to tables from Israeli Ministry of Education annual reports spanning 2001-2023. The pipeline converts unstructured data from Word documents into structured CSV files, handling different document formats and using AI-powered redundancy detection to filter relevant graphs.
 
 ## Data Coverage
 
@@ -37,7 +37,7 @@ This project extracts and processes graphs and tables from Israeli Ministry of E
 
 **Process**:
 1. Calculate semantic similarity between graph headers and table headers
-2. Use AI to determine if graphs are redundant (≈80% redundancy rate found)
+2. Use AI to determine if graphs are redundant (≈20% redundancy rate found)
 3. Filter out redundant graphs to keep only unique data
 
 ## Repository Structure
@@ -48,13 +48,7 @@ project/
 ├── redundant_graphs_removal.ipynb   # Redundancy detection system
 ├── alignment_of_tables_and_headers.ipynb  # Interactive alignment tool
 ├── extracting_graphs_to_bigquery.ipynb    # BigQuery upload script
-├── docs/                            # Documentation
-├── reports/                         # Original Word documents
-├── images/                          # Extracted graph images (2001-2016)
-├── extracted_files/                 # Extracted Excel/CSV files (2019-2023)
-├── graphs_to_csvs_2001-2016/      # Converted CSVs from images
-├── relevant_graphs/                 # Non-redundant graphs only
-└── json_mappings/                   # Various mapping files
+
 ```
 
 ## Key Scripts
@@ -91,7 +85,7 @@ project/
 ### BigQuery Tables
 - Dataset: `ncc-data-bigquery.graphs`
 - Tables named by pattern: `{serial}_{chapter}_{year}`
-- Query examples available for loading data by chapter or year
+- Query examples available for loading data by id chapter or year
 
 ## Requirements
 
@@ -178,7 +172,7 @@ WHERE _TABLE_SUFFIX LIKE '%_5_%'
 - Manual verification ensures 100% accuracy in mapping
 
 ### Why Redundancy Detection?
-- ~80% of graphs merely visualized existing table data
+- ~20% of graphs merely visualized existing table data
 - Removing redundant graphs reduces processing costs and storage
 - Focuses analysis on unique information sources
 
@@ -192,7 +186,7 @@ WHERE _TABLE_SUFFIX LIKE '%_5_%'
 
 1. **Missing Years**: 2017-2018, 2020, 2024 not processed due to format issues
 2. **OCR Accuracy**: Some complex Hebrew tables may have extraction errors
-3. **API Costs**: Full processing requires ~$7-10 in Claude API credits
+3. **API Costs**: Full processing requires ~$15-20 in Claude API credits
 4. **Manual Steps**: Alignment for 2019-2023 requires human intervention
 
 ## Future Improvements
@@ -204,12 +198,7 @@ WHERE _TABLE_SUFFIX LIKE '%_5_%'
 
 ## Contact & Contributing
 
-For questions or contributions, please open an issue or submit a pull request.
+For questions or contributions, please contact in shira.gelbstein@mail.huji.ac.il
 
-## License
-
-[Specify your license here]
-
----
 
 *Note: This project processes publicly available government reports. All extracted data maintains original Hebrew text without translation.*
