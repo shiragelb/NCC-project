@@ -1,8 +1,8 @@
-# Israeli Education Reports - Graph Extraction Pipeline
+# NCC Reports - Graph Extraction Pipeline
 
 ## Project Overview
 
-This project extracts and processes graphs to tables from Israeli Ministry of Education annual reports spanning 2001-2023. The pipeline converts unstructured data from Word documents into structured CSV files, handling different document formats and using AI-powered redundancy detection to filter relevant graphs.
+This project extracts and processes graphs to tables from yearly reports spanning 2001-2023. The pipeline converts unstructured data from Word documents into structured CSV files, handling different document formats and using AI-powered redundancy detection to filter relevant graphs.
 
 ## Data Coverage
 
