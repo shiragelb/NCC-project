@@ -2,221 +2,206 @@
 
 ## Overview
 
-This pipeline processes Hebrew statistical tables across multiple years, creating temporal chains and merging related datasets. The system consists of two main stages:
+This pipeline tracks and consolidates Hebrew statistical tables across multiple years (2001-2024), creating temporal chains that show how tables evolve over time. It consists of two sequential stages:
 
-1. **Chain Creation** (`table-chain-matching/`): Builds chains from tables across years
-2. **Chain Merging** (`chain-api-expantion/`): Merges complementary chains using semantic validation
+1. **Chain Creation** (`table-chain-matching/`): Tracks individual tables across years within each chapter
+2. **Chain Merging** (`chain-api-expantion/`): Consolidates related chains that represent the same statistical data
 
-## Directory Structure
-
-```
-chain/
-├── table-chain-matching/     # Stage 1: Chain creation
-│   ├── src/                  # Core modules
-│   ├── main.py               # Main pipeline
-│   └── tables_summary.json   # Required input
-│
-└── chain-api-expantion/       # Stage 2: Chain merging
-    ├── chains_chapter_*.json  # Input chains (from Stage 1)
-    ├── merge_chains_iterative.py
-    └── merged_results/        # Merge outputs
-```
-
-## Pipeline Workflow
-
-### Stage 1: Chain Creation
-
-**Location**: `table-chain-matching/`
-
-**Purpose**: Creates chains of related tables across years (2001-2024) for each chapter.
-
-**Input Requirements**:
-- `tables_summary.json`: Mapping of table identifiers to headers
-- Table CSV files in `tables/year/chapter/` structure (optional)
-
-**Process**:
-```bash
-cd table-chain-matching
-python main.py
-```
-
-**Outputs**: 
-- `../chain-api-expantion/chains_chapter_1.json` through `chains_chapter_15.json`
-- Each file contains chains tracking table evolution across years
-
-**Key Features**:
-- Hebrew text normalization
-- AlephBERT embeddings for semantic similarity
-- Hungarian algorithm for optimal matching
-- Gap handling for missing years
-- Split/merge detection
-
-### Stage 2: Chain Merging
-
-**Location**: `chain-api-expantion/`
-
-**Purpose**: Merges complementary chains that represent the same dataset split across chapters.
-
-**Input Requirements**:
-- Chain files from Stage 1 (`chains_chapter_*.json`)
-- `.env` file with `ANTHROPIC_API_KEY`
-- AlephBERT model (auto-downloads)
-
-**Process**:
-```bash
-cd chain-api-expantion
-
-# Single chapter
-python merge_chains_iterative.py --chapters 1
-
-# Multiple chapters
-python merge_chains_iterative.py --chapters 1 2 3 --threshold 0.7
-```
-
-**Parameters**:
-- `--chapters`: Chapter numbers to process (1-15)
-- `--threshold`: Cosine similarity threshold (0.0-1.0, default 0.7)
-- `--output-dir`: Output directory (default: merged_results)
-- `--verbose`: Enable detailed output
-
-**Outputs**:
-- `merged_results/merged_chains_ch*_timestamp.json`: Timestamped results
-- `merged_results/merge_report_ch*_timestamp.json`: Processing report
-- `../../merge_chains/chains_chapter_*.json`: Clean output for downstream use
-
-## Installation
+## Quick Start
 
 ### Prerequisites
+
 ```bash
 # Python 3.8+
 pip install pandas numpy scipy
 pip install sentence-transformers torch transformers
 pip install anthropic python-dotenv
-pip install plotly networkx
+pip install plotly
 ```
 
-### Setup
+### Basic Setup
 
-1. **Clone and setup Stage 1**:
-```bash
-cd table-chain-matching
-pip install -r requirements.txt
-```
-
-2. **Configure Stage 1**:
-Edit `config.json`:
+1. **Configure Chain Creation** (`table-chain-matching/config.json`):
 ```json
 {
-    "tables_dir": "/path/to/tables",
-    "similarity_threshold": 0.78,
+    "tables_dir": "tables",
+    "reference_json": "tables_summary.json",
+    "similarity_threshold": 0.85,
     "use_api_validation": false
 }
 ```
 
-3. **Setup Stage 2**:
-Create `.env` in `chain-api-expantion/`:
+2. **Configure Chain Merging** (`chain-api-expantion/.env`):
 ```
 ANTHROPIC_API_KEY=your_api_key_here
 ```
 
-## Complete Pipeline Example
+### Running the Pipeline
 
 ```bash
-# Stage 1: Create chains
+# Stage 1: Create chains from tables
 cd table-chain-matching
 python main.py
-# Creates: ../chain-api-expantion/chains_chapter_1.json ... chains_chapter_15.json
 
-# Stage 2: Merge chains
+# Stage 2: Merge related chains
 cd ../chain-api-expantion
-
-# Merge within single chapter
-python merge_chains_iterative.py --chapters 1
-
-# Merge across multiple chapters
-python merge_chains_iterative.py --chapters 1 2 3 --threshold 0.75
-
-# Results saved to:
-# - merged_results/ (timestamped files)
-# - ../../merge_chains/ (clean output)
+python merge_chains_iterative.py --chapters 1 2 3 --threshold 0.7
 ```
 
-## Output Files
+## Directory Structure
 
-### Chain Format
+```
+chain/
+├── table-chain-matching/          # Stage 1: Chain creation
+│   ├── main.py                    # Run this first
+│   ├── config.json                # Configuration
+│   ├── tables_summary.json        # Required: Maps table IDs to Hebrew headers
+│   ├── src/                       # Core modules
+│   ├── tables/                    # Input CSVs (year/chapter structure)
+│   └── output/                    # Processing logs
+│
+├── chain-api-expantion/           # Stage 2: Chain merging
+│   ├── merge_chains_iterative.py  # Run this second
+│   ├── chains_chapter_*.json      # Input from Stage 1
+│   ├── .env                       # API configuration
+│   └── merged_results/            # Consolidated outputs
+│
+└── validation/                    # Additional validation tools (see internal docs)
+```
+
+## Stage 1: Chain Creation
+
+Creates chains tracking how each table evolves across years within its chapter.
+
+**Required Input**:
+- `tables_summary.json`: Maps table identifiers to their Hebrew headers
+- Tables in CSV format (optional, for full processing)
+
+**Run**:
+```bash
+cd table-chain-matching
+python main.py
+```
+
+**Output**:
+- Creates `chains_chapter_1.json` through `chains_chapter_15.json` in `../chain-api-expantion/`
+- Each file contains chains showing table evolution from 2001-2024
+
+## Stage 2: Chain Merging
+
+Merges chains that represent the same statistical data but were split across chapters or years.
+
+**Required Input**:
+- Chain files from Stage 1
+- Anthropic API key in `.env` file
+
+**Run**:
+```bash
+cd chain-api-expantion
+
+# Process specific chapters
+python merge_chains_iterative.py --chapters 1 2 3
+
+# Adjust similarity threshold if needed (default 0.7)
+python merge_chains_iterative.py --chapters 1 --threshold 0.75
+```
+
+**Parameters**:
+- `--chapters`: Which chapters to process (1-15)
+- `--threshold`: Similarity threshold for merging (0.0-1.0)
+- `--output-dir`: Where to save results (default: `merged_results`)
+- `--verbose`: Show detailed progress
+
+**Output**:
+- `merged_results/merged_chains_ch*_timestamp.json`: Consolidated chains
+- `merged_results/merge_report_ch*_timestamp.json`: Processing statistics
+- Clean copies in `../../merge_chains/chains_chapter_*.json`
+
+## Understanding the Output
+
+### Chain Structure
 ```json
 {
   "chain_id": {
     "id": "chain_1_01_2001",
     "tables": ["1_01_2001", "1_01_2002", ...],
     "years": [2001, 2002, ...],
-    "headers": ["header1", "header2", ...],
-    "status": "active|dormant|merged",
+    "headers": ["Column 1", "Column 2", ...],
     "gaps": [2005, 2007],
     "similarities": [0.95, 0.87, ...]
   }
 }
 ```
 
-### Merge Report
-- Original vs final chain count
-- Successful merges with year ranges
-- API calls and pre-screening statistics
-- Year coverage analysis
+### Key Fields
+- `tables`: List of table IDs in the chain
+- `years`: Years covered by the chain
+- `headers`: Hebrew column headers (normalized)
+- `gaps`: Years where table was missing
+- `similarities`: Match confidence scores
 
-## Key Algorithms
+## Input Data Requirements
 
-1. **Similarity Matching**: Cosine similarity with AlephBERT embeddings
-2. **Hungarian Algorithm**: Optimal bipartite matching
-3. **Gap Handling**: Dormancy and reactivation logic
-4. **Semantic Validation**: Claude API for uncertain matches
-5. **Iterative Merging**: Greedy optimization by coverage improvement
+### Tables Summary JSON
+Must map table IDs to their headers:
+```json
+{
+  "1_01_2001": ["header1", "header2", ...],
+  "2_01_2001": ["header1", "header2", ...]
+}
+```
+
+### Table Naming Convention
+Tables should follow the pattern: `TABLE#_CHAPTER_YEAR.csv`
+- Example: `1_01_2001.csv` (Table 1, Chapter 01, Year 2001)
+
+## Common Use Cases
+
+### Process Single Chapter
+```bash
+# Create chains for chapter 1
+cd table-chain-matching
+python main.py  # Processes all chapters by default
+
+# Merge within chapter 1
+cd ../chain-api-expantion
+python merge_chains_iterative.py --chapters 1
+```
+
+### Process Multiple Chapters with Different Thresholds
+```bash
+# Stricter matching for chapters 1-5 (more similar content)
+python merge_chains_iterative.py --chapters 1 2 3 4 5 --threshold 0.75
+
+# Looser matching for chapters 6-10 (more varied content)
+python merge_chains_iterative.py --chapters 6 7 8 9 10 --threshold 0.65
+```
 
 ## Troubleshooting
 
-### Common Issues
+### No `tables_summary.json`
+This file is required and must contain the mapping of all table IDs to their Hebrew headers.
 
-1. **Missing tables_summary.json**:
-   - Required for Stage 1
-   - Maps table IDs to Hebrew headers
+### API Key Issues
+Ensure `.env` file exists in `chain-api-expantion/` with valid `ANTHROPIC_API_KEY`.
 
-2. **API Key errors**:
-   - Ensure `.env` file exists with valid `ANTHROPIC_API_KEY`
-   - Check API quota limits
+### No Merges Found
+- Try lowering the threshold (e.g., 0.6 instead of 0.7)
+- Check that chains have complementary year coverage
+- Enable `--verbose` to see what's being compared
 
-3. **Memory issues**:
-   - Process chapters individually
-   - Increase threshold to reduce API calls
+### Memory Issues
+Process chapters individually rather than all at once.
 
-4. **No merges found**:
-   - Lower similarity threshold
-   - Check if chains have complementary years
+## Notes
 
-### Performance Tips
+- The pipeline is optimized for Hebrew text processing using AlephBERT embeddings
+- Stage 2 uses Claude API for semantic validation of uncertain matches
+- Processing all 15 chapters typically takes 10-30 minutes depending on API usage
+- The `validation/` folder contains additional tools for result validation (see documentation within)
 
-- Process chapters 1-5 separately from 6-15 (different content types)
-- Use threshold 0.7-0.75 for balanced precision/recall
-- Enable verbose mode for debugging
+## Output Locations
 
-## Data Flow
-
-```
-tables_summary.json → Chain Creation → chains_chapter_*.json
-                           ↓
-                    Chain Merging (API validation)
-                           ↓
-                    merged_chains_*.json
-                           ↓
-                    Final output in merge_chains/
-```
-
-## License
-
-MIT
-
-## Support
-
-For issues or questions, check:
-- Chain creation logs in `table-chain-matching/output/`
-- Merge reports in `chain-api-expantion/merged_results/`
-- API usage in merge reports for cost tracking
+Final processed chains will be in:
+1. `chain-api-expantion/merged_results/` - Timestamped results with reports
+2. `../../merge_chains/` - Clean output files for downstream processing
