@@ -177,7 +177,7 @@ WHERE year = 2021
 ## 📈 Processing Statistics
 - **Extract:** ~30 seconds per document
 - **Chain Creation:** ~2-5 minutes per chapter
-- **Chain Merging:** ~1-3 minutes per chapter  
+- **Chain Merging:** ~20 minutes per chapter  
 - **BigQuery Migration:** ~2-3 hours for full dataset
 - **Final Processing:** ~10-30 seconds per chain (from BigQuery)
 
@@ -273,10 +273,4 @@ GROUP BY merge_status"
 - Processing logs saved with timestamps in logs/ directories
 - API usage tracked in merge reports
 
-## 🤝 Contributing
-When adding new features:
-1. Update the appropriate stage's README
-2. Ensure BigQuery compatibility
-3. Test with a single chain first
-4. Document any schema changes
-5. Update this main README
+
