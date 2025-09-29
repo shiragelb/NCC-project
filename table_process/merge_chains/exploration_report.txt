@@ -1,0 +1,199 @@
+Starting code exploration for redundancy analysis...
+This may take a moment...
+
+================================================================================
+PROJECT STRUCTURE ANALYSIS
+================================================================================
+
+1. DIRECTORY STRUCTURE:
+----------------------------------------
+./
+├── README.md (8,661 bytes)
+├── chain_loader.py (5,904 bytes)
+├── code_explorer.py (10,771 bytes)
+├── column_matcher.py (6,806 bytes)
+├── config.py (2,530 bytes)
+├── embeddings_handler.py (2,799 bytes)
+├── exploration_report.txt (0 bytes)
+├── main_pipeline.py (11,211 bytes)
+├── merger_engine.py (8,113 bytes)
+├── output_generator.py (8,221 bytes)
+├── requirements.txt (486 bytes)
+├── run_pipeline.py (8,382 bytes)
+├── table_normalizer.py (11,117 bytes)
+├── test_setup.py (1,158 bytes)
+├── backup_20250929_062538/
+  ├── output_generator.py (5,331 bytes)
+├── backup_20250929_063316/
+  ├── README.md (1,932 bytes)
+  ├── chain_loader.py (3,378 bytes)
+├── cache/
+├── chain_configs/
+  ├── chains_chapter_1.json (169,502 bytes)
+  ├── chains_chapter_10.json (346,094 bytes)
+  ├── chains_chapter_11.json (104,146 bytes)
+  ├── chains_chapter_12.json (729,816 bytes)
+  ├── chains_chapter_13.json (558,546 bytes)
+  ├── chains_chapter_14.json (744,106 bytes)
+  ├── chains_chapter_15.json (105,629 bytes)
+  ├── chains_chapter_2.json (234,357 bytes)
+  ├── chains_chapter_3.json (311,149 bytes)
+  ├── chains_chapter_4.json (237,351 bytes)
+  ├── chains_chapter_5.json (763,569 bytes)
+  ├── chains_chapter_6.json (205,882 bytes)
+  ├── chains_chapter_7.json (432,995 bytes)
+  ├── chains_chapter_8.json (644,116 bytes)
+  ├── chains_chapter_9.json (403,580 bytes)
+├── config/
+  ├── example_config.json (428 bytes)
+├── docs/
+├── logs/
+  ├── pipeline_20250929_063537.log (0 bytes)
+  ├── pipeline_20250929_064200.log (0 bytes)
+  ├── pipeline_20250929_065334.log (0 bytes)
+  ├── pipeline_20250929_065612.log (0 bytes)
+  ├── pipeline_20250929_070000.log (0 bytes)
+  ├── pipeline_20250929_072541.log (0 bytes)
+  ├── pipeline_20250929_075255.log (0 bytes)
+  ├── pipeline_20250929_080718.log (0 bytes)
+├── notebooks/
+├── output/
+  ├── merged_merged_chain_1_01_2001_chain_1_01_2005.csv (9,704 bytes)
+  ├── metadata_merged_chain_1_01_2001_chain_1_01_2005.json (808 bytes)
+  ├── summary_chapter_1.json (666 bytes)
+├── tests/
+
+2. DUPLICATE FILES (same content):
+----------------------------------------
+Hash d41d8cd9...:
+  - exploration_report.txt (0 bytes)
+  - logs/pipeline_20250929_063537.log (0 bytes)
+  - logs/pipeline_20250929_064200.log (0 bytes)
+  - logs/pipeline_20250929_065334.log (0 bytes)
+  - logs/pipeline_20250929_065612.log (0 bytes)
+  - logs/pipeline_20250929_070000.log (0 bytes)
+  - logs/pipeline_20250929_072541.log (0 bytes)
+  - logs/pipeline_20250929_075255.log (0 bytes)
+  - logs/pipeline_20250929_080718.log (0 bytes)
+
+3. SIMILARLY NAMED FILES:
+----------------------------------------
+'README' pattern:
+  - README.md
+  - backup_20250929_063316/README.md
+'chain_loader' pattern:
+  - chain_loader.py
+  - backup_20250929_063316/chain_loader.py
+'output_generator' pattern:
+  - output_generator.py
+  - backup_20250929_062538/output_generator.py
+
+4. BACKUP/TEMP DIRECTORIES:
+----------------------------------------
+  - backup_20250929_062538/ (1 files)
+  - backup_20250929_063316/ (2 files)
+
+5. PYTHON MODULE OVERVIEW:
+----------------------------------------
+Potential entry points:
+
+  main_pipeline.py:
+    Classes: TableChainMerger
+    Main functions: test_single_chain, validate_outputs, calculate_completeness, process_single_chain, process_chapter
+
+  run_pipeline.py:
+    Main functions: setup_logging, validate_environment, main, filtered_process
+
+  test_setup.py:
+    Main functions: check_setup
+
+
+Core modules:
+
+  merger_engine.py:
+    Classes: MergerEngine
+    Key functions: merge_chain, initialize_schema, add_empty_year_data, update_schema_for_stacking, build_stacked_table
+
+  chain_loader.py:
+    Classes: ChainLoader
+    Key functions: load_chain_config, load_table, create_empty_placeholder, load_mask
+
+  column_matcher.py:
+    Classes: ColumnMatcher
+    Key functions: match_columns_to_schema, build_similarity_matrix, calculate_similarity, normalize_hebrew_text, apply_matching_with_thresholds
+
+  embeddings_handler.py:
+    Classes: EmbeddingsHandler
+    Key functions: get_embedding, get_batch_embedding, calculate_similarity
+
+  output_generator.py:
+    Classes: OutputGenerator
+    Key functions: write_outputs, write_report
+
+  table_normalizer.py:
+    Classes: TableNormalizer
+    Key functions: normalize_table_structure, detect_table_structure, has_column_change_midtable, has_hamshech_markers, get_feature_rows
+
+6. IMPORT ANALYSIS:
+----------------------------------------
+Most imported modules:
+  - typing: used in 10 files
+  - logging: used in 10 files
+  - json: used in 8 files
+  - pandas: used in 8 files
+  - os: used in 7 files
+  - numpy: used in 5 files
+  - datetime: used in 5 files
+  - re: used in 3 files
+  - pathlib: used in 3 files
+  - main_pipeline: used in 3 files
+
+7. CONFIGURATION FILES:
+----------------------------------------
+  - config.py (2,530 bytes)
+  - chain_configs/chains_chapter_1.json (169,502 bytes)
+  - chain_configs/chains_chapter_10.json (346,094 bytes)
+  - chain_configs/chains_chapter_11.json (104,146 bytes)
+  - chain_configs/chains_chapter_12.json (729,816 bytes)
+  - chain_configs/chains_chapter_13.json (558,546 bytes)
+  - chain_configs/chains_chapter_14.json (744,106 bytes)
+  - chain_configs/chains_chapter_15.json (105,629 bytes)
+  - chain_configs/chains_chapter_2.json (234,357 bytes)
+  - chain_configs/chains_chapter_3.json (311,149 bytes)
+  - chain_configs/chains_chapter_4.json (237,351 bytes)
+  - chain_configs/chains_chapter_5.json (763,569 bytes)
+  - chain_configs/chains_chapter_6.json (205,882 bytes)
+  - chain_configs/chains_chapter_7.json (432,995 bytes)
+  - chain_configs/chains_chapter_8.json (644,116 bytes)
+  - chain_configs/chains_chapter_9.json (403,580 bytes)
+  - config/example_config.json (428 bytes)
+  - output/metadata_merged_chain_1_01_2001_chain_1_01_2005.json (808 bytes)
+  - output/summary_chapter_1.json (666 bytes)
+  - __pycache__/config.cpython-313.pyc (0 bytes)
+
+8. TEST FILES:
+----------------------------------------
+  - test_setup.py
+
+================================================================================
+SUMMARY STATISTICS:
+================================================================================
+Total files: 44
+Total size: 6,099,244 bytes (5.82 MB)
+Python files: 13
+Backup directories: 2
+
+================================================================================
+REDUNDANCY INDICATORS:
+================================================================================
+Redundancy Score: 11/10
+  ⚠ Found 2 backup/temp directories
+  ⚠ Found 1 sets of duplicate files
+  ⚠ Multiple entry points: main_pipeline.py, run_pipeline.py, test_setup.py
+  ⚠ Both config.py and config/ directory exist
+
+🔴 High redundancy detected - significant cleanup opportunity
+
+================================================================================
+Analysis complete!
+================================================================================
