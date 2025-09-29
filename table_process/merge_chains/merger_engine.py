@@ -15,6 +15,8 @@ logger = logging.getLogger(__name__)
 class MergerEngine:
     def __init__(self, config: Dict):
         self.config = config
+        from column_matcher import ColumnMatcher
+        self.matcher = ColumnMatcher(self.config)
 
     def merge_chain(self, normalized_tables: List[Dict]) -> pd.DataFrame:
         """Main merge function - stacks tables with meta_year tracking"""
@@ -39,9 +41,7 @@ class MergerEngine:
             if current_table.empty:
                 self.add_empty_year_data(schema, current_year)
             else:
-                from column_matcher import ColumnMatcher
-                matcher = ColumnMatcher(self.config)
-                matches = matcher.match_columns_to_schema(schema, current_table, current_year)
+                matches = self.matcher.match_columns_to_schema(schema, current_table, current_year)
                 schema = self.update_schema_for_stacking(schema, current_table, matches, current_year)
 
             # Detect and fix unit changes if configured

@@ -37,14 +37,10 @@ def validate_environment():
     """Validate that necessary files and directories exist"""
     issues = []
     
-    # Check for chain JSON files
-    chain_files = list(Path(".").glob("chains_chapter_*.json"))
+    # Check for chain JSON files in chain_configs directory
+    chain_files = list(Path("chain_configs").glob("chains_chapter_*.json"))
     if not chain_files:
-        issues.append("No chain configuration files (chains_chapter_*.json) found")
-    
-    # Check for tables directory
-    if not Path("tables").exists():
-        issues.append("Tables directory not found")
+        issues.append("No chain configuration files found in chain_configs/ folder")
     
     return issues
 
@@ -137,7 +133,17 @@ def main():
             try:
                 chains = merger.loader.load_chain_config(chapter)
                 if args.chains:
-                    chains = {k: v for k, v in chains.items() if k in args.chains}
+                    # Filter chains with partial matching for merged chains
+                    filtered_chains = {}
+                    for k, v in chains.items():
+                        for chain_id in args.chains:
+                            if (k == chain_id or 
+                                f"merged_{chain_id}_chain" in k or 
+                                f"_chain_{chain_id}" in k or
+                                chain_id in k):
+                                filtered_chains[k] = v
+                                break
+                    chains = filtered_chains
                 
                 logger.info(f"Would process {len(chains)} chains:")
                 for chain_id, chain_config in chains.items():
@@ -177,7 +183,21 @@ def main():
                 logger.info(f"Filtering to years: {args.years}")
             
             # Process the chapter
-            results = merger.process_chapter(chapter, args.chains)
+            # Filter chains with partial matching for merged chains
+            if args.chains:
+                all_chains = merger.loader.load_chain_config(chapter)
+                filtered_chain_ids = []
+                for k in all_chains.keys():
+                    for chain_id in args.chains:
+                        if (k == chain_id or 
+                            f"merged_{chain_id}_chain" in k or 
+                            f"_chain_{chain_id}" in k or
+                            chain_id in k):
+                            filtered_chain_ids.append(k)
+                            break
+                results = merger.process_chapter(chapter, filtered_chain_ids)
+            else:
+                results = merger.process_chapter(chapter, args.chains)
             all_results.extend(results)
             
             # Report results
