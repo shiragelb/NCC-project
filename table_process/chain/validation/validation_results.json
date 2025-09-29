@@ -1,0 +1,172 @@
+{
+  "clean_chains": [
+    {
+      "chapter": 4,
+      "chain_id": "chain_11_04_2006"
+    },
+    {
+      "chapter": 6,
+      "chain_id": "chain_7_06_2020"
+    },
+    {
+      "chapter": 3,
+      "chain_id": "merged_chain_12_03_2005_chain_8_03_2017"
+    },
+    {
+      "chapter": 5,
+      "chain_id": "chain_10_05_2001"
+    },
+    {
+      "chapter": 5,
+      "chain_id": "chain_12_05_2011"
+    },
+    {
+      "chapter": 14,
+      "chain_id": "chain_4_14_2020"
+    },
+    {
+      "chapter": 13,
+      "chain_id": "chain_7_13_2007"
+    },
+    {
+      "chapter": 12,
+      "chain_id": "chain_14_12_2001"
+    },
+    {
+      "chapter": 4,
+      "chain_id": "chain_9_04_2006"
+    },
+    {
+      "chapter": 13,
+      "chain_id": "chain_19_13_2016"
+    },
+    {
+      "chapter": 1,
+      "chain_id": "chain_13_01_2001"
+    },
+    {
+      "chapter": 3,
+      "chain_id": "chain_5_3_2024"
+    },
+    {
+      "chapter": 1,
+      "chain_id": "merged_chain_1_01_2001_chain_1_01_2005"
+    },
+    {
+      "chapter": 10,
+      "chain_id": "chain_4_10_2024"
+    },
+    {
+      "chapter": 8,
+      "chain_id": "chain_18_8_2022"
+    },
+    {
+      "chapter": 5,
+      "chain_id": "merged_chain_14_05_2001_chain_26_05_2009"
+    },
+    {
+      "chapter": 5,
+      "chain_id": "chain_11_05_2002"
+    },
+    {
+      "chapter": 14,
+      "chain_id": "chain_19_14_2001"
+    },
+    {
+      "chapter": 12,
+      "chain_id": "chain_25_12_2007"
+    },
+    {
+      "chapter": 12,
+      "chain_id": "chain_34_12_2013"
+    },
+    {
+      "chapter": 2,
+      "chain_id": "chain_12_02_2004"
+    },
+    {
+      "chapter": 14,
+      "chain_id": "chain_16_14_2001"
+    },
+    {
+      "chapter": 5,
+      "chain_id": "chain_21_05_2002"
+    },
+    {
+      "chapter": 13,
+      "chain_id": "chain_19_13_2015"
+    },
+    {
+      "chapter": 2,
+      "chain_id": "chain_12_02_2011"
+    },
+    {
+      "chapter": 6,
+      "chain_id": "chain_1_6_2024"
+    },
+    {
+      "chapter": 14,
+      "chain_id": "chain_4_14_2006"
+    },
+    {
+      "chapter": 13,
+      "chain_id": "merged_chain_15_13_2016_merged_chain_10_13_2007_chain_13_13_2019"
+    },
+    {
+      "chapter": 4,
+      "chain_id": "chain_8_04_2016"
+    },
+    {
+      "chapter": 7,
+      "chain_id": "chain_14_7_2019"
+    },
+    {
+      "chapter": 9,
+      "chain_id": "chain_10_09_2011"
+    },
+    {
+      "chapter": 13,
+      "chain_id": "chain_15_13_2008"
+    },
+    {
+      "chapter": 4,
+      "chain_id": "chain_4_04_2001"
+    },
+    {
+      "chapter": 14,
+      "chain_id": "merged_chain_2_14_2017_merged_chain_4_14_2010_chain_4_14_2019"
+    },
+    {
+      "chapter": 3,
+      "chain_id": "chain_13_03_2001"
+    },
+    {
+      "chapter": 5,
+      "chain_id": "chain_29_5_2021"
+    },
+    {
+      "chapter": 1,
+      "chain_id": "chain_24_01_2012"
+    },
+    {
+      "chapter": 12,
+      "chain_id": "chain_30_12_2015"
+    },
+    {
+      "chapter": 5,
+      "chain_id": "chain_37_5_2024"
+    }
+  ],
+  "contaminated_chains": [
+    {
+      "chapter": 13,
+      "chain_id": "merged_chain_15_13_2012_chain_28_13_2019"
+    }
+  ],
+  "statistics": {
+    "total_sampled": 40,
+    "clean_count": 39,
+    "contaminated_count": 1,
+    "clean_rate": 0.975
+  }
+}
