@@ -94,7 +94,11 @@ Analyzes tables across all years to create temporal chains.
 Merges complementary chains using Claude API for validation.
 - **Output:** Consolidated chains with merged IDs
 
-### 🔵 Stage 2C: BigQuery Migration (`data_structure/`)
+### 🔵 Stage 2C: Masking (`mask/`)
+  Generate masks for tables, which points are features and which are data points.
+- **Creates:** A corresponding mask for each table 
+
+### 🔵 Stage 2D: BigQuery Migration (`data_structure/`)
 Loads all chains, tables, and masks to BigQuery database.
 - **Creates:** All BigQuery tables with indexed data
 

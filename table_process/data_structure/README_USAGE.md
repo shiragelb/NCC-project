@@ -99,9 +99,9 @@ is_feature:    BOOLEAN       # TRUE = feature/header, FALSE = data value
 ┌──────────┬──────────┬──────────┐
 │ FEATURE  │ FEATURE  │ FEATURE  │  ← Column headers
 ├──────────┼──────────┼──────────┤
-│ FEATURE  │   data   │   data   │  ← Row header + data
+│   data   │   data   │   data   │  ← Row header + data
 ├──────────┼──────────┼──────────┤
-│ FEATURE  │   data   │   data   │  ← Row header + data
+│   data   │   data   │   data   │  ← Row header + data
 └──────────┴──────────┴──────────┘
 ```
 
@@ -113,10 +113,10 @@ is_feature:    BOOLEAN       # TRUE = feature/header, FALSE = data value
 | 1_01_2001  | 0   | 0   | TRUE       |  ← Corner header
 | 1_01_2001  | 0   | 1   | TRUE       |  ← Column header
 | 1_01_2001  | 0   | 2   | TRUE       |  ← Column header
-| 1_01_2001  | 1   | 0   | TRUE       |  ← Row header
+| 1_01_2001  | 1   | 0   | FALSE      |  ← Row header
 | 1_01_2001  | 1   | 1   | FALSE      |  ← Data value
 | 1_01_2001  | 1   | 2   | FALSE      |  ← Data value
-| 1_01_2001  | 2   | 0   | TRUE       |  ← Row header
+| 1_01_2001  | 2   | 0   | FALSE       |  ← Row header
 | 1_01_2001  | 2   | 1   | FALSE      |  ← Data value
 | 1_01_2001  | 2   | 2   | FALSE      |  ← Data value
 ```
