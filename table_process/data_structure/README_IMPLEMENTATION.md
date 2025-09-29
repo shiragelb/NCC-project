@@ -23,7 +23,6 @@ data_structure/
 ├── examples/                       # Usage examples
 ├── .env                           # Environment variables (DO NOT COMMIT)
 ├── requirements.txt               # Python dependencies
-├── migrate_to_bigquery.py        # Initial migration script
 └── final_migrate.py              # Working migration script
 ```
 
