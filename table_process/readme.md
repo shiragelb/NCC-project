@@ -1,8 +1,11 @@
-# Hebrew Statistical Table Processing Pipeline with BigQuery Integration
+# NCC reports Processing Pipeline with into a BigQuery data base
 A comprehensive system for extracting, tracking, merging, and storing Hebrew statistical tables from multi-year government reports (2001-2024) in BigQuery for scalable analysis.
 
 ## 🎯 Overview
-This pipeline processes Hebrew statistical documents organized by year and chapter, extracting tables from Word documents, creating temporal chains that track how tables evolve across years, merging related datasets to produce complete time series data, and storing everything in BigQuery for efficient querying and analysis.
+This pipeline processes NCC documents organized by year and chapter, extracting tables from docx documents, creating temporal chains that track how tables evolve across years, merging related datasets to produce complete time series data, and storing everything in BigQuery for efficient querying and analysis.
+
+### In Fact
+The masking part is not properly working well enough to complete the pipline, but we have tried to provide the ultimate infrastructure and documentation such that once you are over this challenge (probably just an issue of putting a few 100$ to api calls...) the rest will be ready to process it all. (*) 
 
 ## 📊 Pipeline Architecture
 The system consists of six main stages:
@@ -11,19 +14,19 @@ Stage 1: EXTRACT TABLES (extract_tables/)
   ↓ Extracts tables from Word docs → CSV files + metadata
 
 Stage 2A: CREATE CHAINS (chain/table-chain-matching/)
-  ↓ Matches tables across years → temporal chains
+  ↓ Matches tables across years → temporal chains 
 
 Stage 2B: MERGE CHAINS (chain/chain-api-expantion/)
-  ↓ Combines complementary chains → consolidated chains
+  ↓ Combines complementary chains → consolidated chains - with further time and budget, runing more itterations of this step, we believe you could further merge more chains. 
 
 Stage 2C: MASK GENERATION (mask/)
-  ↓ Classifies cells as features/data-points using rules + LLM
+  ↓ Classifies cells as features/data-points using rules + LLM - this is the the above mentioned problem (*)
 
 Stage 2D: BIGQUERY MIGRATION (data_structure/)
   ↓ Loads all data to BigQuery → queryable database
 
 Stage 3: FINAL PROCESSING (merge_chains/)
-  ↓ Reads from BigQuery, aligns columns → final datasets in BigQuery
+  ↓ Reads from BigQuery, aligns columns → final datasets in BigQuery - this part seems to be working given the not perfect masks we currently have, but it will definitely need some hyperparameters tuning at the very least to get it working properly once you have the masking. 
 ```
 
 ## 🗄️ BigQuery Data Structure

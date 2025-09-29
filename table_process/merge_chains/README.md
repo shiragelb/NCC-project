@@ -7,7 +7,7 @@ The pipeline performs a complex transformation cycle:
 1. **Retrieves** long-format data from BigQuery (one row per cell)
 2. **Pivots** to wide format (traditional table structure) 
 3. **Normalizes** table structures using masks to identify headers vs data
-4. **Aligns** columns across years using semantic similarity (BERT embeddings)
+4. **Aligns** columns across years using cosine similarity (alephBERT embeddings)
 5. **Stacks** aligned tables with meta_year tracking
 6. **Converts** back to long format for BigQuery storage
 7. **Saves** both as local CSV (wide format) and BigQuery (long format)
@@ -48,7 +48,7 @@ Matches columns across years using:
 - **Dual threshold system**:
   - `auto_accept_threshold` (0.85): Auto-match high confidence
   - `manual_review_threshold` (0.5): Minimum for consideration
-  - Currently both set to same value to avoid API calls
+  - Currently both set to same value to avoid API calls - when having the right masks could be useful to involve api calls
 
 ### 4. **MergerEngine** (`merger_engine.py`)
 Core merging logic:
@@ -159,9 +159,7 @@ gcloud auth application-default login
 
 ### Mask Enhancement via Chain Context
 The current mask generation operates on individual tables without chain context. The merging stage could improve masks by:
-- If a column matches a "feature" column from all previous years → likely a feature
-- If content is identical across years → likely a header
-- Semantic similarity to known headers across the chain
+- If a row matches a "feature" row from all previous years → likely a feature
 
 **Note**: We haven't implemented this as mask generation itself needs improvements first.
 
@@ -194,13 +192,7 @@ Currently, the dual threshold system is set up but not utilized (both thresholds
    - Convert to long format
    - Insert to BigQuery with status tracking
 
-## 🐛 Troubleshooting
 
-### Missing Dependencies
-```bash
-pip install pandas numpy google-cloud-bigquery db-dtypes \
-    python-Levenshtein scikit-learn transformers torch
-```
 
 ### BigQuery Warnings
 ```bash

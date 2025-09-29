@@ -88,3 +88,6 @@ Pairs pre-screened out: 287
 AlephBERT threshold: 0.7
 Year coverage maintained: True
 ```
+
+## FUTURE WORK
+This part was relatively budget heavy, around 50$ on API calls. we believe that with further time and budget, due to its itterative nature, this algorithm can keep improving the merging of small chains into bigger ones. 
