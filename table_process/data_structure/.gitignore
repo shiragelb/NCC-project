@@ -1,0 +1,17 @@
+# Credentials
+config/service-account-key.json
+*.json.key
+
+# Environment
+.env
+venv/
+__pycache__/
+*.pyc
+
+# Data files
+*.csv
+data/
+
+# IDE
+.vscode/
+.idea/

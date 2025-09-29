@@ -1,0 +1,2 @@
+-- Tables will be created here
+-- chains_metadata, tables_data, masks_data
