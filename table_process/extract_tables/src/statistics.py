@@ -2,22 +2,6 @@
 Statistics generation for extracted tables.
 """
 
-# ========================================================================
-# INSTRUCTIONS: PASTE YOUR CODE FROM NOTEBOOK
-# ========================================================================
-# FROM LINES: ~1300-1400 (approximately, near the end)
-# CONTENT: The statistics generation code
-# 
-# FIND THE SECTION WITH:
-# - Code that creates tables_stats.csv
-# - Code that counts unnamed tables
-# - Code that generates per_chapter_year statistics
-#
-# MODIFICATIONS NEEDED:
-# 1. Wrap the code in the generate_statistics() function below
-# 2. Return the stats dictionary
-# ========================================================================
-
 import json
 import csv
 import os
